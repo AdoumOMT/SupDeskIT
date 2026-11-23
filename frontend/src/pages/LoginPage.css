@@ -1,0 +1,77 @@
+/* Centrage parfait du formulaire */
+.centre-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Style du formulaire avec fond semi-transparent et bordures */
+.position-form {
+  background-color: rgba(255, 255, 255, 0.85); /* semi-transparent */
+  border: 2px ;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Titre centré */
+.titre {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Champs de saisie avec bordure apparente */
+.position-input {
+  width: 92%;
+  padding: 10px 15px;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  border: 1px solid #bababa;
+  background-color: rgba(232, 230, 230, 0.8);
+  border-radius: 8px;
+  outline: none;
+  color: black;
+}
+
+/* Bouton centré et bien visible */
+.position-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00acc1;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.position-button:hover {
+  background-color: #00838f;
+}
+
+/* Liens centrés et stylisés */
+.position-link {
+  margin-top: 1.5rem;
+  margin-left: -1em;
+  text-align: center;
+}
+
+.position-link a {
+  color: #00acc1;
+  text-decoration: none;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.position-link a:hover {
+  color: #00838f;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem; /* équivalent à text-sm */
+  margin-bottom: 1rem;
+}

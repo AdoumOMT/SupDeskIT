@@ -1,0 +1,62 @@
+.vue-tickets-container {
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 60em;
+  margin-top: 7em;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.export-btn {
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filters select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #aeaeae;
+}
+
+.tickets-table {
+  width: 100% !important;
+  font-size: 13px;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #f0f0f0;
+}
+
+.tickets-table th,
+.tickets-table td {
+  padding: 10px;
+  border-bottom: 1px solid #d0cfcf;
+  text-align: left;
+}
+
+.tickets-table th {
+  background-color: #c2c1c1;
+  font-weight: 600;
+}

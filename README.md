@@ -114,13 +114,29 @@ source venv/bin/activate
 # Installer les dépendances
 pip install -r requirements.txt
 
-# Appliquer les migrations et lancer le serveur
+# Appliquer les migrations
 python manage.py migrate
+```
+
+### 3. Créer les comptes et données de démonstration
+Toujours dans le dossier `backend` (avec l'environnement virtuel activé), exécute la commande suivante pour initialiser les trois espaces avec des tickets et notifications d'exemple :
+```bash
+python manage.py seed
+```
+
+| Espace | Identifiant (`username`) | Mot de passe |
+| :--- | :--- | :--- |
+| **Employé** | `employe_demo` | `Password123!` |
+| **Technicien** | `tech_demo` | `Password123!` |
+| **Chef de service** | `chef_demo` | `Password123!` |
+
+Lance ensuite le serveur backend :
+```bash
 python manage.py runserver
 ```
 > L'API backend sera accessible sur `http://localhost:8000`.
 
-### 3. Configuration du Frontend (React)
+### 4. Configuration du Frontend (React)
 Ouvre un second terminal à la racine du projet (`SupDeskIT`) :
 ```bash
 cd frontend
@@ -150,9 +166,9 @@ Plusieurs améliorations techniques et fonctionnelles sont envisagées pour les 
 
 ## Auteur
 
-Adoum Oumar Moussa Tahir
-Étudiant en informatique — Data & IA, Systèmes d'optimisations.
+**Adoum Oumar Moussa Tahir**  
+Étudiant en informatique — Data & IA, Systèmes d'optimisation.
 
-GitHub : https://github.com/AdoumOMT
+- **GitHub** : [@AdoumOMT](https://github.com/AdoumOMT)
 
 Les retours, suggestions d'amélioration et conseils d'architecture sont les bienvenus !
